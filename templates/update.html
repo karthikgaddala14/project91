@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="aqua">
+<form action="./update">
+     pid=<input type="text" name="t1" value="{{rec.pid}}"><br>
+     pname=<input type="text" name="t2" value="{{rec.pname}}"><br>
+     pcost=<input type="text" name="t3" value="{{rec.pcost}}"><br>
+     pmfdt=<input type="text" name="t4" value="{{rec.pmfdt|date:'Y-m-d'}}"><br>
+     pexpdt=<input type="text" name="t5" value="{{rec.pexpdt|date:'Y-m-d'}}"><br>
+    <input type="submit" value="update">
+
+
+
+</form>
+
+</body>
+</html>

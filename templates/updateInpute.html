@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body bgcolor="#7fffd4">
+  <form action="./updateDetails">
+   select product id
+   <select name="t1">
+     {% for p in records %}
+      <option value="{{ p.pid }}">{{ p.pid }}</option>
+     {% endfor %}
+    <input type="submit" value="getDetails">
+   </select>
+
+</form>
+</body>
+</html>
